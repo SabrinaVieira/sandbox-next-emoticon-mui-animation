@@ -5,8 +5,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>MarketPlace | Fidúcia SCM</title>
-        <meta property="og:title" content="MarketPlace" key="title" />
+        <title>Título</title>
+        <meta property="og:title" content="Título" key="title" />
       </Head>
 
       <>OLA</>
