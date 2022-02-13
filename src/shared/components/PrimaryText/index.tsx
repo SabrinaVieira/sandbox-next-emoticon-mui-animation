@@ -1,6 +1,6 @@
 
-export default function PrimaryTextindex() {
+export default function PrimaryText() {
   return (
-    <div>PrimaryTextindex</div>
+    <h2>CSS é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML </h2>
   )
 }

@@ -1,6 +1,6 @@
 
-export default function ImagemComponentindex() {
+export default function ImagemComponent() {
   return (
-    <div>ImagemComponentindex</div>
+    <img src="/images/cat.svg" width="650px"/>
   )
 }

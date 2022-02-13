@@ -1,6 +1,6 @@
 
 export default function SecondaryText () {
   return (
-    <div>SecondaryText </div>
+    <h3>CSS é uma das principais linguagens da open web e é padronizada em navagadores web</h3>
   )
 }

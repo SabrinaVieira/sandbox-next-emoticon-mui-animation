@@ -1,25 +1,66 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
-import globalTheme from "../../../styles/globalTheme";
-import { mediaQuerieMaxnFunc } from "../../../styles/themeMui";
+import globalTheme from "../../styles/globalTheme";
 
-// exemplo 3d
-// export const mySlid = keyframes`
-//    from, 20%, 53%, 80%, to {
-//     transform: translate3d(0,0,0);
-//   }
-//   40%, 43% {
-//     transform: translate3d(0, -30px, 0);
-//   }
-//   70% {
-//     transform: translate3d(0, -15px, 0);
-//   }
-//   90% {
-//     transform: translate3d(0,-4px,0);
-//   }
-// }`;
+interface IBkgContainer {
+  imgObj: string;
+}
 
-export const mySlidX = keyframes`
+export const BkgComponent = styled.div<IBkgContainer>`
+  width: 100%;
+  height: 900px;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center start;
+  align-items: center;
+
+  background-image: url(${(props) => props.imgObj});
+  background-color: ${globalTheme.colors.pinkColor100};
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  color: ${globalTheme.colors.whiteColor100};
+`
+export const MenuContainer = styled.div`
+  width: calc(100% - 3rem);
+  height: 8.5rem;
+  position: absolute;
+  bottom:0;
+  top: 2rem;
+  background-color: blue;
+`
+
+export const ImageContainer = styled.div`
+  width: 52.5rem;
+  height: 48.75rem;
+  position: absolute;
+  top: 2rem;
+`;
+
+export const PrimaryTextContainer = styled.div`
+  width: 35rem;
+  position: absolute;
+  top: 2rem;
+`;
+
+export const SecondaryTextContainer = styled.div`
+  width: 25.5rem;
+  height: 5rem;
+  position: absolute;
+  top: 10rem;
+`;
+
+export const ButtonContainerA = styled.div`
+  width: 12rem;
+  height: 3rem;
+  position: relative;
+  top: 10rem;
+`;
+
+export const mySlidMenu = keyframes`
    from, 0% to {
     right: 0;
     opacity:1;
@@ -34,7 +75,21 @@ export const mySlidX = keyframes`
     opacity:0;
   background-color: blue;
   }
-}`;
+}`
+
+
+
+
+
+export const LayoutContainer = styled.div`
+width: 100%;
+overflow: hidden;
+display: grid;
+grid-template-columns: 1fr;
+
+justify-items: center;
+align-items: center;
+`
 
 export const mySlidY = keyframes`
    from, 0% to {
@@ -53,33 +108,4 @@ export const mySlidY = keyframes`
     transform: translateY(375px);
     opacity:0;
   }
-}`;
-
-export const DivBox = styled.div`
-  width: 100px;
-  height: 100px;
-`;
-
-/* The element to apply the animation to */
-export const DivRed = styled(DivBox)`
-  position: absolute;
-  background-color: red;
-`;
-
-export const DivBlue = styled(DivBox)`
-  position: absolute;
-  margin-right: 40%;
-  right: 0;
-  top: 80px;
-  background-color: blue;
-`;
-
-export const ImageImage = styled.img`
-  width: 52.5rem;
-  height: 48.75rem;
-  position: relative;
-`;
-
-/* const hotpink = css({
-  color: 'hotpink'
-}) */
+}`

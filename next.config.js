@@ -21,5 +21,8 @@ module.exports = {
     env: {
       API_URL: process.env.NEXT_PUBLIC_BASEAPI_URL,
     },
+    images: {
+      domains: ['storyset.com'],
+    }
   })
 };

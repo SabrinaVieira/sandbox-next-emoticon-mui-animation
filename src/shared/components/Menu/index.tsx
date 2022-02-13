@@ -1,6 +1,6 @@
 
 export default function MenuComponent() {
   return (
-    <div>MenuComponent</div>
+      <h2>Menu Componente</h2>
   )
 }

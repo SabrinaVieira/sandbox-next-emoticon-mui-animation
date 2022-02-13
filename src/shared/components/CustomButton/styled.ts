@@ -1,40 +1,5 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
-import globalTheme from "../../../styles/globalTheme";
-import { mediaQuerieMaxnFunc } from "../../../styles/themeMui";
-
-// exemplo 3d
-// export const mySlid = keyframes`
-//    from, 20%, 53%, 80%, to {
-//     transform: translate3d(0,0,0);
-//   }
-//   40%, 43% {
-//     transform: translate3d(0, -30px, 0);
-//   }
-//   70% {
-//     transform: translate3d(0, -15px, 0);
-//   }
-//   90% {
-//     transform: translate3d(0,-4px,0);
-//   }
-// }`;
-
-export const mySlidX = keyframes`
-   from, 0% to {
-    right: 0;
-    opacity:1;
-  background-color: red;
-  }
-  80% {
-    transform: translateX(1000px);
-    opacity:1;
-  }
-  100% {
-    transform: translateX(-400px);
-    opacity:0;
-  background-color: blue;
-  }
-}`;
 
 export const mySlidY = keyframes`
    from, 0% to {
