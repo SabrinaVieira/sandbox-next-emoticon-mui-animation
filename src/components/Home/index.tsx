@@ -10,12 +10,13 @@ import PrimaryText from "../../shared/components/PrimaryText";
 import SecondaryText from "../../shared/components/SecondaryText";
 import {
   BkgComponent,
-  ButtonContainer,
   ButtonContainerA,
+  HeaderheroContainer,
   ImageContainer,
   LayoutContainer,
   MenuContainer,
   mySlidY,
+  mySlidYY,
   PrimaryTextContainer,
   SecondaryTextContainer
 } from "./styled";
@@ -34,11 +35,11 @@ const Home: NextPage = () => {
       </Head>
       <div style={{ position: "relative", width: "100%" }}>
         <BkgComponent imgObj={bkAnimation}>
-          <MenuContainer css={css`animation: ${mySlidY} 5s linear infinite`}>
+          <MenuContainer css={css`animation: ${mySlidYY} 3s linear infinite`}>
             <MenuComponent />
           </MenuContainer>
 
-          <ImageContainer>
+          {/* <ImageContainer>
             <ImagemComponent />
           </ImageContainer>
 
@@ -51,10 +52,10 @@ const Home: NextPage = () => {
           </SecondaryTextContainer>
 
           <ButtonContainerA>
-            <Button>
+            <Button variant="contained">
               Saiba mais
-            </Button>
-          </ButtonContainerA>
+            </Button >
+          </ButtonContainerA> */}
         </BkgComponent>
       </div>
     </LayoutContainer>
